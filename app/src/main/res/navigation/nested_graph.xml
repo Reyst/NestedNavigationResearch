@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_graph"
+    app:startDestination="@id/dstFragment2"
+    >
+
+    <fragment
+        android:id="@+id/dstFragment2"
+        android:name="gsihome.reyst.nestednavigation.DstFragment"
+        android:label="DstFragment"
+        >
+        <argument
+            android:name="name"
+            app:argType="string"
+            />
+        <argument
+            android:name="dst"
+            app:argType="integer"
+            />
+    </fragment>
+</navigation>
